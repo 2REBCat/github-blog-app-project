@@ -1,0 +1,10 @@
+footer {
+    background: rgb(29, 110, 29);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer a{
+    color:white;
+  }
