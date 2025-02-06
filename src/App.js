@@ -1,22 +1,20 @@
+import { Routes, Route } from 'react-router';
 import './App.css';
+import Container from './Component/Container';
 import Footer from './Component/Footer';
 import Header from './Component/Header';
+import Resume from './Component/Resume';
 
 function App() {
   return (
     <>
       <Header></Header>
-      <div class="container">
-          <div class="nav">
-              local navigation
-          </div>
-          <div class="content">
-              contents
-              <br/>
-              <br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-          </div>
-      </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Container/>}/>
+          <Route path="/AboutMe" element={<Resume/>}/>
+        </Routes>
+      </main>
       <Footer></Footer>
     </>
   );

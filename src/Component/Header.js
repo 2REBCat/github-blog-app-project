@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Header.css';
 
 function Header(){
@@ -7,8 +8,8 @@ function Header(){
                 <img src='logo.png' alt='LOGO'></img>
             </div>
             <nav class="global-nav">
-                <a href="#">Let's study</a>
-                <a href="#">About me</a>
+                <Link to="/">Let's study</Link>
+                <Link to="AboutMe">About me</Link>
             </nav>
         </header>
     );

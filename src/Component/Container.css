@@ -1,0 +1,29 @@
+.container {
+    background: white;
+    display: flex;
+    flex-direction: row;  
+    min-height: 300px;
+  }
+  .nav {
+    background: lightgray;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+  }
+  .content {
+    background: white;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .nav {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+  }
