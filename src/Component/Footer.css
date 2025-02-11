@@ -1,10 +1,15 @@
 footer {
-    background: rgb(29, 110, 29);
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+  height: 6vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(29, 110, 29);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-  footer a{
-    color:white;
-  }
+footer a{
+  color:white;
+}

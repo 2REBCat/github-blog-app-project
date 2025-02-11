@@ -5,7 +5,9 @@ function Header(){
     return(
         <header>
             <div class="logo">
-                <img src='logo.png' alt='LOGO'></img>
+                <Link to="/">
+                    <img src='logo.png' alt='LOGO'></img>
+                </Link>
             </div>
             <nav class="global-nav">
                 <Link to="/">Let's study</Link>
