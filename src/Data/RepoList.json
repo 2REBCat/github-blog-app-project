@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nameKo": "컴퓨터 네트워크", "nameEn": "Computer Networks", "link": "Computer_Networks"},
+    { "id": 2, "nameKo": "자료구조", "nameEn": "Data Structures", "link": "Data_Structures" },
+    { "id": 3, "nameKo": "운영체제", "nameEn": "Operating Systems", "link": "OS" },
+    { "id": 4, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" }
+]
