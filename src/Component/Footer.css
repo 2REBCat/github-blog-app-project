@@ -4,10 +4,11 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(29, 110, 29);
+  background: rgb(138,140,56);
   color: white;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer a{
