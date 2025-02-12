@@ -1,0 +1,81 @@
+/* 네비게이션 컨테이너 */
+.nav-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+/* details 기본 스타일 제거 */
+.nav-dropdown {
+    list-style: none;
+}
+
+/* 네비게이션 버튼 */
+.nav-header {
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.nav-header:hover {
+    background-color: #f0f0f0;
+}
+
+/* 네비게이션 리스트 */
+.nav-list {
+    display: none;
+    padding-top: 10px;
+}
+
+/* details가 열린 상태에서 리스트 표시 */
+.nav-dropdown[open] .nav-list {
+    display: block;
+}
+
+/* 리스트 아이템 */
+.nav-item {
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* hover 효과 */
+.nav-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* PC 화면에서는 항상 리스트 보이도록 설정 */
+@media (min-width: 601px) {
+    .nav-dropdown .nav-list {
+        display: block !important;
+    }
+    .nav-header {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .nav-list{
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+}
