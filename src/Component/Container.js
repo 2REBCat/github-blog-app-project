@@ -2,7 +2,6 @@ import './Container.css';
 import LocalNav from './LocalNav';
 import StudyContents from './StudyContents';
 
-import NavData from '../Data/LocalNav.json';
 import studyData from '../Data/ContentTest.json';
 import { useNavigate, useParams } from 'react-router';
 import { useEffect, useState} from 'react';
@@ -12,11 +11,10 @@ function Container({RepoData}){
     const [NavData, setNavData] = useState({"ko": [], "en": []});
 
     const navigate = useNavigate();
-
     const {coursename} = useParams();
-    const courses = [...RepoData];
 
     useEffect(() => {
+        const courses = [...RepoData];
         if(!courses.some(course => course.link === coursename)){
             navigate("/");
         }
@@ -33,7 +31,7 @@ function Container({RepoData}){
         }
 
         GetJsonData(url);
-    }, []);
+    }, [navigate, coursename, RepoData]);
     return(
         <div className="container">
           <div className="nav">
