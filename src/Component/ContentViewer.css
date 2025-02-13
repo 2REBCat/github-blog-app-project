@@ -1,0 +1,9 @@
+.text {
+    word-wrap: break-word;
+    font-size: large;
+    text-align: left;
+}
+
+.img {
+    max-width: 100%;
+}

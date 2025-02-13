@@ -5,11 +5,20 @@ function StudyContent({paragraph}){
     return(
         <>
             <h1>{paragraph.title}</h1>
+            <br></br>
+            <br></br>
+            <br></br>
             {
                 contents.map((content, i) => (
                     <ContentViewer key={i} content={content}></ContentViewer>
                 ))
             }
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </>
     );
 }
