@@ -30,6 +30,7 @@
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
+    gap: 0.5%;
   }
   .nav {
     background-color: rgb(212,213,173);
