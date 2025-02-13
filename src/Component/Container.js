@@ -1,21 +1,18 @@
 import './Container.css';
+import LocalNav from './LocalNav';
+import StudyContents from './StudyContents';
+
+import NavList from '../Data/LocalNav.json';
+import studyData from '../Data/ContentTest.json';
 
 function Container(){
     return(
-        <div class="container">
-          <div class="nav">
-              local navigation
-              <br/>
-              <br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                hell?
+        <div className="container">
+          <div className="nav">
+              <LocalNav NavList={NavList}></LocalNav>
           </div>
-          <div class="content">
-              contents
-              <br/>
-              <br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                hell?
+          <div className="content">
+              <StudyContents studyData={studyData}></StudyContents>
           </div>
         </div>
     );

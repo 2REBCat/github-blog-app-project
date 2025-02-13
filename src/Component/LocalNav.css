@@ -1,11 +1,12 @@
 /* 네비게이션 컨테이너 */
 .nav-container {
     width: 100%;
-    max-width: 400px;
     background-color: #fff;
     border-radius: 10px;
     padding: 2%;
     text-align: center;
+    min-height: auto;
+    overflow: auto;
 }
 
 /* details 기본 스타일 제거 */
@@ -16,7 +17,7 @@
 /* 네비게이션 버튼 */
 .nav-header {
     padding: 12px 16px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #333;
     background-color: #f9f9f9;
@@ -44,11 +45,10 @@
 /* 리스트 아이템 */
 .nav-item {
     padding: 12px 16px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
     color: #333;
     text-align: center;
-    border-radius: 6px;
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
@@ -72,8 +72,6 @@
     .nav-container {
         width: 90%;
         position: fixed;
-        left: 50%;
-        transform: translate(-50%);
     }
     .nav-list{
         max-height: 50vh;
