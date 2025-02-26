@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import './LocalNav.css';
 
 function LocalNav({NavData}){
@@ -8,7 +10,9 @@ function LocalNav({NavData}){
                 <summary className="nav-header">Contents</summary>
                 <div className="nav-list">
                     {NavList.map((item, i) => (
-                        <p key={i} className="nav-item">{item}</p>
+                        <Link key={i} to={"?title="+i}>
+                            <p key={i} className="nav-item">{item}</p>
+                        </Link>
                     ))}
                 </div>
             </details>

@@ -2,7 +2,6 @@ import './Container.css';
 import LocalNav from './LocalNav';
 import StudyContents from './StudyContents';
 
-import studyData from '../Data/ContentTest.json';
 import { useNavigate, useParams } from 'react-router';
 import { useEffect, useState} from 'react';
 
@@ -19,14 +18,19 @@ function Container({RepoData}){
             navigate("/");
         }
 
-        const url = `/${coursename}/index.json`
+        const url = `/${coursename}/index.json`;
 
         const GetJsonData = async (url) => {
             const res = await fetch(url);
 
             const htmlText = await res.text();
-            const jsonData = JSON.parse(htmlText);
-            console.log(jsonData);
+            let jsonData = {"ko": ["아직 공부 중 입니다.."], "en": ["I'm still studying it.."]}
+            try{
+                jsonData = JSON.parse(htmlText);
+            }catch(err){
+                console.log("Can't load index..");
+            }
+
             setNavData(jsonData);
         }
 
@@ -38,7 +42,7 @@ function Container({RepoData}){
               <LocalNav NavData={NavData.ko}></LocalNav>
           </div>
           <div className="content">
-              <StudyContents studyData={studyData}></StudyContents>
+              <StudyContents coursename={coursename}></StudyContents>
           </div>
         </div>
     );
