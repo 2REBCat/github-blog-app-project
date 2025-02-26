@@ -1,21 +1,3 @@
 [
-    { "id": 1, "nameKo": "테스트 콘텐츠", "nameEn": "test contents", "link": "github-blog-contents-test"},
-    { "id": 2, "nameKo": "자료구조", "nameEn": "Data Structures", "link": "Data_Structures" },
-    { "id": 3, "nameKo": "운영체제", "nameEn": "Operating Systems", "link": "OS" },
-    { "id": 4, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 5, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 6, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 7, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 8, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 9, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 10, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 11, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 12, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 13, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 14, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 15, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 16, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 17, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 18, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" },
-    { "id": 19, "nameKo": "알고리즘", "nameEn": "Algorithms", "link": "Algorithms" }
+    { "id": 1, "nameKo": "테스트 콘텐츠", "nameEn": "test contents", "link": "github-blog-contents-test"}
 ]
