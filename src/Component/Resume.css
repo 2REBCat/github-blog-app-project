@@ -32,9 +32,10 @@
     text-align: left;
 }
 .card h2 {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #999;
     padding-bottom: 2%;
-    color: #007bff;
+    margin-bottom: 2%;
+    color: #777;
 }
 .info {
     list-style: none;
@@ -42,7 +43,7 @@
     color: #333;
 }
 .info li {
-    margin-bottom: 5%;
+    margin-bottom: 1.5%;
 }
 a {
     color: #007bff;
