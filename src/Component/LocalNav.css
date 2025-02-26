@@ -42,6 +42,10 @@
     display: block;
 }
 
+.nav-atag{
+    text-decoration-line: none;
+}
+
 /* 리스트 아이템 */
 .nav-item {
     padding: 1%;
