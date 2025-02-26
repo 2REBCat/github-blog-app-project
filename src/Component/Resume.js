@@ -5,8 +5,8 @@ function Resume(){
         <div class="intro">
             <div class="intro_content">
                 <div class="card">
-                    <h1 class="title">Introduction</h1>
-                    <h3 class="intro">두 눈이 빨개질 때까지 밤낮으로 새로움을 찾아 배우는 2RebCat 한성필입니다!</h3>
+                    <h1 class="intro_title">Introduction</h1>
+                    <h3 class="intro_detail">두 눈이 빨개질 때까지 밤낮으로 새로움을 찾아 배우는 2RebCat 한성필입니다!</h3>
                 </div>
 
                 <div class="card">

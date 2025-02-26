@@ -13,12 +13,12 @@
     background-color: rgb(212,213,173);
 }
 
-.title {
+.intro_title {
     font-size: 2em;
     margin-bottom: 2%;
     color: #333;
 }
-.intro {
+.intro_detail {
     font-size: 1.2em;
     margin-bottom: 1%;
     color: #555;
