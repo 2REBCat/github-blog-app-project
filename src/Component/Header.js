@@ -11,7 +11,7 @@ function Header(){
             </div>
             <nav className="global-nav">
                 <Link to="/">Let's study</Link>
-                <Link to="AboutMe">About me</Link>
+                <Link to="/?menu=AboutMe">About me</Link>
             </nav>
         </header>
     );

@@ -2,15 +2,14 @@ import './Container.css';
 import LocalNav from './LocalNav';
 import StudyContents from './StudyContents';
 
-import { useNavigate, useParams } from 'react-router';
+import { useNavigate } from 'react-router';
 import { useEffect, useState} from 'react';
 
-function Container({RepoData}){
+function Container({RepoData, coursename}){
 
     const [NavData, setNavData] = useState({"ko": [], "en": []});
 
     const navigate = useNavigate();
-    const {coursename} = useParams();
 
     useEffect(() => {
         const courses = [...RepoData];
@@ -39,7 +38,7 @@ function Container({RepoData}){
     return(
         <div className="container">
           <div className="nav">
-              <LocalNav NavData={NavData.ko}></LocalNav>
+              <LocalNav coursename={coursename} NavData={NavData.ko}></LocalNav>
           </div>
           <div className="content">
               <StudyContents coursename={coursename}></StudyContents>
