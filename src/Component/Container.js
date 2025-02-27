@@ -1,47 +1,23 @@
 import './Container.css';
 import LocalNav from './LocalNav';
 import StudyContents from './StudyContents';
+import useGetJson from '../Hooks/useGetJson';
 
-import { useNavigate } from 'react-router';
-import { useEffect, useState} from 'react';
+function Container({coursename, title}){
+    const NavData = useGetJson(
+        {"ko": ["아직 공부 중 입니다.."], "en": ["I'm still studying it.."]},
+        `/${coursename}/index.json`,
+        coursename,
+        "Can't load index.."
+    )
 
-function Container({RepoData, coursename}){
-
-    const [NavData, setNavData] = useState({"ko": [], "en": []});
-
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const courses = [...RepoData];
-        if(!courses.some(course => course.link === coursename)){
-            navigate("/");
-        }
-
-        const url = `/${coursename}/index.json`;
-
-        const GetJsonData = async (url) => {
-            const res = await fetch(url);
-
-            const htmlText = await res.text();
-            let jsonData = {"ko": ["아직 공부 중 입니다.."], "en": ["I'm still studying it.."]}
-            try{
-                jsonData = JSON.parse(htmlText);
-            }catch(err){
-                console.log("Can't load index..");
-            }
-
-            setNavData(jsonData);
-        }
-
-        GetJsonData(url);
-    }, [navigate, coursename, RepoData]);
     return(
         <div className="container">
           <div className="nav">
               <LocalNav coursename={coursename} NavData={NavData.ko}></LocalNav>
           </div>
           <div className="content">
-              <StudyContents coursename={coursename}></StudyContents>
+              <StudyContents coursename={coursename} title={title}></StudyContents>
           </div>
         </div>
     );

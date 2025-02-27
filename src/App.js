@@ -1,6 +1,6 @@
 import Header from './Component/Header';
 import Footer from './Component/Footer';
-import CheckSearchParams from './Component/CheckSearchParams';
+import MainContents from './Component/MainContents';
 
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header></Header>
       <main>
-        <CheckSearchParams></CheckSearchParams>
+        <MainContents></MainContents>
       </main>
       <Footer></Footer>
     </>
