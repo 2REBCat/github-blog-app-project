@@ -6,13 +6,13 @@ function Resume(){
             <div class="intro_content">
                 <div class="card">
                     <h1 class="intro_title">Introduction</h1>
-                    <h3 class="intro_detail">두 눈이 빨개질 때까지 밤낮으로 새로움을 찾아 배우는 2RebCat 한성필입니다!</h3>
+                    <h3 class="intro_detail">두 눈이 빨개질 때까지 고양이처럼 호기심을 탐구하는 2RebCat 한성필입니다!</h3>
                 </div>
 
                 <div class="card">
                     <h2>EDUCATION</h2>
                     <ul class="info">
-                        <li><strong>대학교:</strong> 상명대학교 학사</li>
+                        <li><strong>학교:</strong> 상명대학교 학사</li>
                         <li><strong>전공:</strong> 컴퓨터과학과 정보보안전공</li>
                         <li><strong>졸업 연도:</strong> 2019년 2월</li>
                     </ul>
