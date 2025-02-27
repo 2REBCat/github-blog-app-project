@@ -8,7 +8,7 @@ function useGetJson(defaultValue, url, coursename, errmsg){
             const res = await fetch(url);
 
             const htmlText = await res.text();
-            let jsonData = "";
+            let jsonData = defaultValue;
             try{
                 jsonData = JSON.parse(htmlText);
             }catch(err){
@@ -19,7 +19,7 @@ function useGetJson(defaultValue, url, coursename, errmsg){
         }
 
         GetJsonData(url);
-    }, [coursename, url, errmsg]);
+    }, [defaultValue, coursename, url, errmsg]);
 
     return JsonData;
 }
