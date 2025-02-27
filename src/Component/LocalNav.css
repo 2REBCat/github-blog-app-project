@@ -46,6 +46,10 @@
     text-decoration-line: none;
 }
 
+.nav-atag:hover{
+    text-decoration-line: none;
+}
+
 /* 리스트 아이템 */
 .nav-item {
     padding: 1%;
