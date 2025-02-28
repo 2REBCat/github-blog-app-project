@@ -2,13 +2,13 @@ import { useSearchParams } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 import { useEffect } from 'react';
 
-import RepoList from './RepoList';
+import StudyList from './StudyList';
 import Resume from './Resume';
 import Container from './Container';
 
 import RepoData from '../Data/RepoList.json';
 
-function MainContents(){
+function SelectMainContents(){
     const [searchParams] = useSearchParams();
     const menu = searchParams.get("menu");
 
@@ -21,7 +21,7 @@ function MainContents(){
 
     if(!searchParams.has("menu")){
         return (
-            <RepoList RepoData={RepoData}></RepoList>
+            <StudyList RepoData={RepoData}></StudyList>
         );
     }
     else{
@@ -43,4 +43,4 @@ function MainContents(){
     
 }
 
-export default MainContents;
+export default SelectMainContents;

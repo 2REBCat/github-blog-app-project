@@ -1,18 +1,25 @@
-import StudyContent from './StudyContent';
-import useGetJson from '../Hooks/useGetJson';
+import ParagraphViewer from "./ParagraphViewer";
 
-function StudyContents({coursename, title}){
-    const Paragraphs = useGetJson(
-        [{"title": "There is no Data", "contents": []}],
-        `/${coursename}/ko/제목 ${Number(title)+1}/contents.json`,
-        coursename,
-        "Can't load content.."
-    )
-
+function StudyContents({paragraph}){
+    const contents = [...paragraph.contents];
     return(
-        Paragraphs.map((paragraph,i) => (
-            <StudyContent key={i} paragraph={paragraph}></StudyContent>
-        ))
+        <>
+            <h1>{paragraph.title}</h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            {
+                contents.map((content, i) => (
+                    <ParagraphViewer key={i} content={content}></ParagraphViewer>
+                ))
+            }
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        </>
     );
 }
 

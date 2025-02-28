@@ -1,6 +1,6 @@
 import './Container.css';
 import LocalNav from './LocalNav';
-import StudyContents from './StudyContents';
+import GetAndShowStudyContents from './GetAndShowStudyContents';
 import useGetJson from '../Hooks/useGetJson';
 
 function Container({coursename, title}){
@@ -17,7 +17,7 @@ function Container({coursename, title}){
               <LocalNav coursename={coursename} NavData={NavData.ko}></LocalNav>
           </div>
           <div className="content">
-              <StudyContents coursename={coursename} title={title}></StudyContents>
+              <GetAndShowStudyContents coursename={coursename} title={title}></GetAndShowStudyContents>
           </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import Header from './Component/Header';
 import Footer from './Component/Footer';
-import MainContents from './Component/MainContents';
+import SelectMainContents from './Component/SelectMainContents';
 
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header></Header>
       <main>
-        <MainContents></MainContents>
+        <SelectMainContents></SelectMainContents>
       </main>
       <Footer></Footer>
     </>

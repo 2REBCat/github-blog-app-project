@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 
-import './RepoList.css';
+import './StudyList.css';
 
-function RepoList({RepoData}){
+function StudyList({RepoData}){
 
   const courses = [...RepoData];
   
@@ -20,4 +20,4 @@ function RepoList({RepoData}){
   );
 }
 
-export default RepoList;
+export default StudyList;

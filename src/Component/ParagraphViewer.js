@@ -1,6 +1,6 @@
-import './ContentViewer.css';
+import './ParagraphViewer.css';
 
-function ContentViewer({content}){
+function ParagraphViewer({content}){
     const text = content.text;
     const imgLink = content.img;
     return(
@@ -15,4 +15,4 @@ function ContentViewer({content}){
     );
 }
 
-export default ContentViewer;
+export default ParagraphViewer;
