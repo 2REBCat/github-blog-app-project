@@ -1,5 +1,6 @@
 /* 리스트 전체 컨테이너 */
 .course-list-container {
+  padding: 1%;
   max-width: 100%;
   height: 100%;
   display: flex;

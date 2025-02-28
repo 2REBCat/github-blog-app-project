@@ -1,12 +1,12 @@
 import { useSearchParams } from 'react-router-dom';
 import { useNavigate } from 'react-router';
+import { useEffect } from 'react';
 
 import RepoList from './RepoList';
 import Resume from './Resume';
+import Container from './Container';
 
 import RepoData from '../Data/RepoList.json';
-import Container from './Container';
-import { useEffect } from 'react';
 
 function MainContents(){
     const [searchParams] = useSearchParams();
