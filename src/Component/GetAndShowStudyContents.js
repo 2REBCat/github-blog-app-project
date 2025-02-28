@@ -5,7 +5,6 @@ function GetAndShowStudyContents({coursename, title}){
     const Paragraphs = useGetJson(
         [{"title": "There is no Data", "contents": []}],
         `/${coursename}/ko/제목 ${Number(title)+1}/contents.json`,
-        coursename,
         "Can't load content.."
     )
 

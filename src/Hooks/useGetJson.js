@@ -1,6 +1,6 @@
 import { useEffect, useState} from 'react';
 
-function useGetJson(defaultValue, url, coursename, errmsg){
+function useGetJson(defaultValue, url, errmsg){
     const [JsonData, setJsonData] = useState(defaultValue);
 
     useEffect(() => {
@@ -8,18 +8,18 @@ function useGetJson(defaultValue, url, coursename, errmsg){
             const res = await fetch(url);
 
             const htmlText = await res.text();
-            let jsonData = defaultValue;
             try{
-                jsonData = JSON.parse(htmlText);
+                const jsonData = JSON.parse(htmlText);
+                setJsonData(jsonData);
             }catch(err){
                 console.log(errmsg);
             }
 
-            setJsonData(jsonData);
+            
         }
 
         GetJsonData(url);
-    }, [defaultValue, coursename, url, errmsg]);
+    }, [url, errmsg]);
 
     return JsonData;
 }

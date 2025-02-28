@@ -7,7 +7,6 @@ function Container({coursename, title}){
     const NavData = useGetJson(
         {"ko": ["아직 공부 중 입니다.."], "en": ["I'm still studying it.."]},
         `/${coursename}/index.json`,
-        coursename,
         "Can't load index.."
     )
 
