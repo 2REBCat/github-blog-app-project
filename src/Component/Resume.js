@@ -101,7 +101,7 @@ function Resume({Lang}){
                 </ul>
                 <br></br>
                 <ul className="info">
-                    <li><strong>Company:</strong> The Korea Times LA 본사</li>
+                    <li><strong>Company:</strong> The Korea Times LA HQ</li>
                     <li><strong>Department:</strong> New Media Dept.</li>
                     <li><strong>Position:</strong> Assistant</li>
                     <li><strong>Period:</strong> 2019 - 2020</li>
