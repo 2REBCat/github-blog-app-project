@@ -3,7 +3,7 @@ import LocalNav from './LocalNav';
 import GetAndShowStudyContents from './GetAndShowStudyContents';
 import useGetJson from '../Hooks/useGetJson';
 
-function Container({coursename, title}){
+function Container({coursename, title, Lang}){
     const NavData = useGetJson(
         {"ko": ["아직 공부 중 입니다.."], "en": ["I'm still studying it.."]},
         `/${coursename}/index.json`,
@@ -13,10 +13,10 @@ function Container({coursename, title}){
     return(
         <div className="container">
           <div className="nav">
-              <LocalNav coursename={coursename} NavData={NavData.ko}></LocalNav>
+              <LocalNav coursename={coursename} NavData={(Lang === "ko") ? NavData.ko : NavData.en}></LocalNav>
           </div>
           <div className="content">
-              <GetAndShowStudyContents coursename={coursename} title={title}></GetAndShowStudyContents>
+              <GetAndShowStudyContents coursename={coursename} title={title} Lang={Lang}></GetAndShowStudyContents>
           </div>
         </div>
     );

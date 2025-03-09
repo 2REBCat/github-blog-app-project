@@ -5,9 +5,13 @@ function ParagraphViewer({content}){
     const imgLink = content.img;
     return(
         <>
-            <div className="text">{text}</div>
+            {
+                text ? <div className="text">{text}</div> : ""
+            }
             <br></br>
-            <img className='img' src={imgLink} alt="img"/>
+            {
+                imgLink ? <img className='img' src={imgLink} alt="img"/> : ""
+            }
             <br></br>
             <br></br>
             <br></br>

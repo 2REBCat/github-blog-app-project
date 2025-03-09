@@ -10,7 +10,7 @@ function LocalNav({coursename, NavData}){
                 <summary className="nav-header">Contents</summary>
                 <div className="nav-list">
                     {NavList.map((item, i) => (
-                        <Link key={i} to={"/?menu="+coursename+"&title="+i} className="nav-atag">
+                        <Link key={i} to={"/?menu="+coursename+"&title="+(i+1)} className="nav-atag">
                             <p key={i} className="nav-item">{item}</p>
                         </Link>
                     ))}

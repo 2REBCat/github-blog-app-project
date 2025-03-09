@@ -1,10 +1,10 @@
 import StudyContents from './StudyContents';
 import useGetJson from '../Hooks/useGetJson';
 
-function GetAndShowStudyContents({coursename, title}){
+function GetAndShowStudyContents({coursename, title, Lang}){
     const Paragraphs = useGetJson(
         [{"title": "There is no Data", "contents": []}],
-        `/${coursename}/ko/제목 ${Number(title)+1}/contents.json`,
+        `/${coursename}/${Lang}/${title}/contents.json`,
         "Can't load content.."
     )
 

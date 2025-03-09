@@ -24,21 +24,19 @@
   transition: background-color 0.2s ease-in-out;
 }
 
+.course-item:hover{
+  text-decoration-line: none;
+}
+
 /* 호버 효과 */
 .course-item:hover {
   background-color: #f5f5f5;
 }
 
 /* 한글 과목명 */
-.course-name-ko {
+.course-name {
   font-size: 18px;
   font-weight: bold;
-}
-
-/* 영문 과목명 */
-.course-name-en {
-  font-size: 14px;
-  color: gray;
 }
 
 /* 오른쪽 화살표 스타일 */
